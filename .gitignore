@@ -1,0 +1,66 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# ===== Node / 前端 =====
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ===== 环境与密钥 =====
+.env
+.env.local
+.env.*.local
+
+# ===== 日志 =====
+*.log
+logs/
+
+# ===== 数据库（运行时生成，不入库）=====
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# ===== 根目录大体积音频素材（不入库）=====
+# 注意：backend/assets/ 下的资源是项目必需的，需保留
+/liu_final2_1.wav
+/刘嘉玲mp3录音/
+/sounds/
+
+# ===== backend 测试产物 =====
+backend/sample_*.wav
+backend/test_full.wav
+backend/test_tts.wav
+backend/voice_reply.wav
+backend/*.wav
+
+# ===== 编辑器 / 系统 =====
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+
+# ===== 工具目录 =====
+.zcode/
+.gitee_research/
+nul
+
+# ===== 临时文件 =====
+*.tmp
+*.bak
+*.swp
+~$*

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 切换摄像头图标：相机 + 环形箭头。对应 MaterialCommunityIcons camera-flip。
+       stroke=currentColor，调用方控制颜色 -->
+  <path d="M4 9V7a2 2 0 0 1 2-2h2"/>
+  <path d="M16 5h2a2 2 0 0 1 2 2v2"/>
+  <path d="M20 15v2a2 2 0 0 1-2 2h-2"/>
+  <path d="M8 19H6a2 2 0 0 1-2-2v-2"/>
+  <rect x="8" y="8" width="8" height="8" rx="2"/>
+  <circle cx="12" cy="12" r="1.8"/>
+</svg>

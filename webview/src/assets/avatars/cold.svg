@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- 冷淡情绪占位头像：丢 cold.png 同名替换 -->
+  <rect width="120" height="120" rx="12" fill="#8E9AAF"/>
+  <text x="60" y="58" text-anchor="middle" dominant-baseline="middle"
+        font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="600" fill="#1A2030">冷淡</text>
+  <text x="60" y="88" text-anchor="middle" dominant-baseline="middle"
+        font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" fill="#1A2030" opacity="0.7">占位 · 替换为 cold.png</text>
+</svg>

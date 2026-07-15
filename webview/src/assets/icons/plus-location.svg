@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- "+"面板：位置 -->
+  <rect width="48" height="48" rx="10" fill="#FA5151"/>
+  <path d="M24 12c-5 0-9 4-9 9 0 6 9 15 9 15s9-9 9-15c0-5-4-9-9-9z" fill="#fff" opacity="0.95"/>
+  <circle cx="24" cy="21" r="3.5" fill="#FA5151"/>
+</svg>

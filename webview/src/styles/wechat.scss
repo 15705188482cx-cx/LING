@@ -1,0 +1,103 @@
+:root {
+  --wx-brand: #07c160;
+  --wx-brand-press: #06ae56;
+  --wx-brand-light: #95ec69;
+  --wx-brand-soft: rgba(7, 193, 96, 0.12);
+
+  --wx-bg: #ededed;
+  --wx-bg-card: #f7f7f7;
+  --wx-bg-white: #ffffff;
+  --wx-bg-active: #ececec;
+  --wx-bg-input: #f5f5f5;
+  --wx-surface: #ffffff;
+  --wx-nav-bg: #f7f7f7;
+  --wx-panel-bg: #f7f7f7;
+
+  --wx-text: rgba(0, 0, 0, 0.9);
+  --wx-text-desc: rgba(0, 0, 0, 0.56);
+  --wx-text-tips: rgba(0, 0, 0, 0.38);
+  --wx-text-placeholder: rgba(0, 0, 0, 0.28);
+  --wx-text-white: #ffffff;
+
+  --wx-icon: rgba(0, 0, 0, 0.82);
+  --wx-icon-muted: rgba(0, 0, 0, 0.52);
+  --wx-line: rgba(0, 0, 0, 0.1);
+  --wx-line-strong: #d9d9d9;
+  --wx-press-overlay: rgba(0, 0, 0, 0.055);
+
+  --wx-tab-color: #7f7f7f;
+  --wx-tab-selected: #07c160;
+  --wx-tab-bg: #f7f7f7;
+  --wx-tab-border: rgba(0, 0, 0, 0.1);
+
+  --wx-bubble-mine: #95ec69;
+  --wx-bubble-other: #ffffff;
+  --wx-bubble-tail-mine: #95ec69;
+  --wx-bubble-tail-other: #ffffff;
+
+  --wx-emo-daily: #95ec69;
+  --wx-emo-flirt: #ff7aa2;
+  --wx-emo-coax: #c77dff;
+  --wx-emo-anxious: #ffb142;
+  --wx-emo-cold: #8e9aaf;
+
+  --wx-tabbar-height: 56px;
+  --wx-navbar-height: 48px;
+  --wx-bubble-radius: 7px;
+  --wx-avatar-size: 40px;
+  --wx-radius-control: 6px;
+  --wx-safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  // —— 现代质感扩展 token（sleek + glassmorphism 局部）——
+  // 语义色：把散落的硬编码魔法值升为 token
+  --wx-danger: #fa5151; // 危险/挂断红，原散落 ~14 处的 #fa5151
+  --wx-danger-soft: rgba(250, 81, 81, 0.12); // 危险色软底，用于激活态光晕
+  --wx-link: #576b95; // 微信链接蓝，原散落 ~7 处的 #576b95
+
+  // 圆角阶梯：收敛全项目 4~40px 散乱取值
+  --wx-radius-sm: 4px;
+  --wx-radius-md: 8px;
+  --wx-radius-lg: 12px;
+  --wx-radius-xl: 16px;
+  --wx-radius-pill: 9999px;
+  // --wx-bubble-radius 保留 7px，维持微信气泡辨识度
+
+  // 间距阶梯（8pt grid）：收敛 6~24px 全凭手感的 padding
+  --wx-space-1: 4px;
+  --wx-space-2: 8px;
+  --wx-space-3: 12px;
+  --wx-space-4: 16px;
+  --wx-space-5: 20px;
+  --wx-space-6: 24px;
+
+  // 阴影阶梯：卡片与浮层的深度层次（glassmorphism 质感基础）
+  --wx-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.06);
+  --wx-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --wx-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.10);
+
+  // 动效：统一过渡时长与缓动，避免无目的装饰动画
+  --wx-duration-fast: 120ms;
+  --wx-duration-normal: 180ms;
+  --wx-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // 可见 focus 态（sleek/glassmorphism 都要求键盘可达 + WCAG AA）
+  --wx-focus-ring: 0 0 0 3px rgba(7, 193, 96, 0.35);
+
+  // 玻璃层 token：仅用于导航栏/弹层/TabBar，正文列表保持扁平
+  --wx-glass-bg: rgba(255, 255, 255, 0.72); // 半透明白，无 blur 支持时退化为半透明底，仍可读
+  --wx-glass-blur: 20px;
+  --wx-glass-border: rgba(255, 255, 255, 0.5); // 发光边框
+  --wx-glass-dark-bg: rgba(0, 0, 0, 0.72); // 深色毛玻璃（长按菜单）
+
+  // 莫兰迪灰调色板：彩色方块图标底，低饱和高明度奶油粉雾感，淡而不灰
+  // 品牌绿 #07c160 保留作功能强调（发送键/气泡/TabBar选中），方块图标底改用以下浅调
+  // 每个浅底配同色系深色图标，保证 WCAG AA 对比度（>3:1）
+  --wx-morandi-amber: #e6d29b; --wx-morandi-amber-fg: #7a6530; // 奶黄底 + 深黄图标
+  --wx-morandi-green: #b5d6bb; --wx-morandi-green-fg: #3d6b4a; // 粉豆绿底 + 深绿图标
+  --wx-morandi-blue: #aec9d8; --wx-morandi-blue-fg: #3a5a6e; // 雾蓝底 + 深蓝图标
+  --wx-morandi-blue-deep: #b8c6d2; --wx-morandi-blue-deep-fg: #3d4a57; // 浅雾蓝底 + 深灰蓝图标
+  --wx-morandi-purple: #c3b8d6; --wx-morandi-purple-fg: #5a4a7a; // 淡薰衣草底 + 深紫图标
+  --wx-morandi-rose: #e0a8ae; --wx-morandi-rose-fg: #8b3d4a; // 灰粉底 + 深玫图标
+
+  --wx-font: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- "+"面板：拍摄（相机）-->
+  <rect width="48" height="48" rx="10" fill="#FA9D3B"/>
+  <path d="M18 14l-2 3h-3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h22a3 3 0 0 0 3-3V20a3 3 0 0 0-3-3h-3l-2-3H18z" fill="#fff" opacity="0.95"/>
+  <circle cx="24" cy="25" r="5" fill="#FA9D3B"/>
+</svg>

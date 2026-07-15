@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+  <!-- 麦克风静音图标：麦克风 + 斜杠。用于视频通话静音按钮。
+       fill=currentColor，调用方控制颜色（白/黑）。fill-opacity 0.9 贴近微信 -->
+  <path fill-opacity="0.9" d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3z"/>
+  <path fill-opacity="0.9" d="M19 11a7 7 0 0 1-14 0H3a9 9 0 0 0 8 8.94V22h2v-2.06A9 9 0 0 0 21 11h-2z"/>
+  <path fill-opacity="0.9" d="M4.22 3.22a.75.75 0 0 0 0 1.06l16 16a.75.75 0 1 0 1.06-1.06l-16-16a.75.75 0 0 0-1.06 0z"/>
+</svg>

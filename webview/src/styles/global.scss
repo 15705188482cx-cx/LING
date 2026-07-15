@@ -1,0 +1,78 @@
+// 全局重置 + 基础排版，贴近微信移动端观感
+
+@use './wechat.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--wx-font);
+  font-size: 16px;
+  color: var(--wx-text);
+  background: #c9c9ce; // 手机外框外的桌面底色
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+  touch-action: manipulation;
+}
+
+button:active {
+  opacity: 0.74;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+// 可见 focus 态：仅键盘/无障碍触发（:focus-visible），触屏不显示，不影响移动观感
+:where(button, a, input, textarea, [tabindex]):focus-visible {
+  outline: none;
+  box-shadow: var(--wx-focus-ring);
+  border-radius: var(--wx-radius-sm);
+}
+
+// 统一交互过渡（hover/active 微反馈），可被组件局部覆盖
+:where(button, a, [role="button"]) {
+  transition: opacity var(--wx-duration-fast) var(--wx-ease),
+    background-color var(--wx-duration-fast) var(--wx-ease),
+    box-shadow var(--wx-duration-fast) var(--wx-ease);
+}
+
+// 统一滚动条隐藏（移动端观感）
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,91 @@
+// 聊天气泡样式 —— 微信风格圆角 + 小三角尾巴
+
+.bubble {
+  position: relative;
+  max-width: 60%;
+  padding: 9px 12px;
+  font-size: 16px;
+  line-height: 1.45;
+  word-break: break-word;
+  white-space: pre-wrap;
+  color: var(--wx-text);
+  border-radius: var(--wx-bubble-radius);
+
+  // 小三角尾巴
+  &::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+  }
+}
+
+// 对方（刘嘉玲）—— 左白气泡
+.bubble-other {
+  background: var(--wx-bubble-other);
+  border-radius: var(--wx-bubble-radius);
+  &::before {
+    left: -14px;
+    border-right-color: var(--wx-bubble-other);
+    border-left-width: 0;
+  }
+}
+
+// 我（用户）—— 右绿气泡
+.bubble-mine {
+  background: var(--wx-bubble-mine);
+  &::before {
+    right: -14px;
+    border-left-color: var(--wx-bubble-mine);
+    border-right-width: 0;
+  }
+}
+
+// 消息行容器
+.msg-row {
+  display: flex;
+  padding: 6px 14px;
+  align-items: flex-start;
+  gap: 10px;
+
+  &.is-mine {
+    flex-direction: row-reverse;
+  }
+
+  .msg-avatar {
+    width: var(--wx-avatar-size);
+    height: var(--wx-avatar-size);
+    border-radius: var(--wx-radius-control);
+    flex-shrink: 0;
+    overflow: hidden;
+    background: var(--wx-bg-active);
+  }
+
+  .msg-bubble-wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 50px);
+  }
+
+  &.is-mine .msg-bubble-wrap {
+    align-items: flex-end;
+  }
+}
+
+// 时间分隔条
+.msg-time {
+  text-align: center;
+  font-size: 12px;
+  color: var(--wx-text-tips);
+  margin: 10px 0;
+}
+
+// 情绪标签（刘嘉玲气泡上可选显示）
+.msg-emotion-tag {
+  font-size: 11px;
+  color: var(--wx-text-tips);
+  margin-bottom: 2px;
+  margin-left: 4px;
+}

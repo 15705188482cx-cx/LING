@@ -1,0 +1,35 @@
+# ling 后端 Python 依赖
+# 安装：pip install -r requirements.txt
+#
+# 说明：faiss-cpu / sentence-transformers / torch 为记忆检索模块（memory_store）所需，
+# 体积较大（torch 数百 MB）。若不需要语义记忆功能，可注释掉这三行，
+# memory 模块会自动降级（core.py 已有 try/except 容错）。
+
+# Web 服务
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# LLM 客户端（OpenAI 兼容接口，MiniMax 等）
+openai>=1.30
+httpx>=0.27
+
+# 配置加载
+python-dotenv>=1.0
+
+# 语音通话 - VAD（SileroVAD，onnx 推理路线）
+onnxruntime>=1.17
+silero-vad>=5.1
+
+# 语音通话 - Opus 编解码
+opuslib>=3.0        # 需系统装 opus 编解码库（Windows 下用 opuslib 或 pyogg）
+
+# 记忆检索模块（FAISS 向量库，可选——注释掉则记忆功能降级）
+faiss-cpu>=1.8
+sentence-transformers>=2.7
+numpy>=1.26
+
+# ASR 语音识别（FunASR SenseVoiceSmall，可选——缺模型则 ASR 降级）
+# 模型需单独下载，见 README
+funasr>=1.2.7
+
+# VLM 视觉理解复用 LLM 客户端，无额外依赖

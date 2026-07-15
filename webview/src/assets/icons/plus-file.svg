@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- "+"面板：文件 -->
+  <rect width="48" height="48" rx="10" fill="#576B95"/>
+  <path d="M16 12h10l8 8v16a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2z" fill="#fff" opacity="0.95"/>
+  <path d="M26 12l8 8h-8z" fill="#576B95" opacity="0.4"/>
+  <path d="M18 26h14v2H18zM18 30h14v2H18zM18 22h8v2h-8z" fill="#576B95"/>
+</svg>
